@@ -2,7 +2,8 @@
 
 def valid_move?(board, index)
   valid = true
-    if index.between?(1,9) == true && position_taken?(board, index) == false 
+    if index.between?(1,9) == true 
+      if position_taken?(board, index) == false 
     valid = true
   else 
     valid = false
